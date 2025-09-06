@@ -1,0 +1,23 @@
+    function removeDuplicates(&$nums) {
+        
+        // Variável que armazena o tamanho da array
+        $i = count($nums) - 1;
+
+
+        // Vai atravessar a array por um looping
+        while ($i>=0)
+        {
+            // Caso seja igual retirar o elemento, caso não só passa pro próximo.
+            if ($nums[$i] === $nums[$i - 1])
+            {
+                unset($nums[$i]);
+                $i--;
+            }
+            else
+            {
+                $i--;
+            }
+        }
+
+        return count($nums);
+    }
