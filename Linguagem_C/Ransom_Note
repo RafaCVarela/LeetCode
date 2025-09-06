@@ -1,0 +1,40 @@
+bool canConstruct(char* ransomNote, char* magazine) {
+    
+    // Comparar os elementos da magazine com os elementos da ransomNote
+
+    // Tomar o tamanho da string
+    int lenMagazine = strlen(magazine);
+    int lenRansomNote = strlen(ransomNote);
+
+    // Contador de letras iguais
+    int letrasIguais = 0;
+
+
+    // Criar um looping que fixa em um elemento da magazine e atravessa a ransomNote
+    for (int i=0; i < lenMagazine; i++)
+    {
+        // Agora iteramos os elementos da ransomNote
+        for (int j=0; j < lenRansomNote; j++)
+        {
+            if ((*(magazine + i) == *(ransomNote + j)))
+            {
+                // Se forem iguais o contador aumenta
+                letrasIguais++;
+
+                // Quando houver uma igualdade, substitui na ransomNote um numero qualquer para retorna para mais uma iteracao da magazine
+                *(ransomNote + j) = '0';
+                
+                // Precisamos sair da segunda iteracao
+                break;
+            }
+        }
+    }
+
+    // Comparar o tamanho da magazine com do contador de letras iguais;
+    if (letrasIguais != lenRansomNote)
+    {
+        return false;
+    }
+    
+    return true;
+}
