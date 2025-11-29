@@ -46,7 +46,7 @@ class Solution {
 }
 
 
-// English - For tests
+// English - For tests run;
 // Português - Para teste rode;
 $codeObject = new Solution();
 
