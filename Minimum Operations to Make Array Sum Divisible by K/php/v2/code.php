@@ -31,18 +31,20 @@ class Solution {
 }
 
 
-// English - For tests
+// English - For tests run
 // Português - Para teste rode;
-$codeObject = new Solution();
-
-$answer = $codeObject->minOperations([5, 10, 15], 5);
+$codeObject00 = new Solution();
+$answer = $codeObject00->minOperations([5, 10, 15], 5);
 echo $answer . "\n";
 
-$answer = $codeObject->minOperations([3, 2], 6);
+$codeObject01 = new Solution();
+$answer = $codeObject01->minOperations([3, 2], 6);
 echo $answer . "\n";
 
-$answer = $codeObject->minOperations([3, 9, 7], 5);
+$codeObject02 = new Solution();
+$answer = $codeObject02->minOperations([3, 9, 7], 5);
 echo $answer . "\n";
 
-$answer = $codeObject->minOperations([4, 1, 3], 4);
+$codeObject03 = new Solution();
+$answer = $codeObject03->minOperations([4, 1, 3], 4);
 echo $answer . "\n";
