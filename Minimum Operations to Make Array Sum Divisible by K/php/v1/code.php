@@ -51,8 +51,13 @@ class Solution {
 $codeObject = new Solution();
 
 $answer = $codeObject->minOperations([5, 10, 15], 5);
-$answer = $codeObject->minOperations([3, 2], 6);
-$answer = $codeObject->minOperations([3, 9, 7], 5);
-$answer = $codeObject->minOperations([4, 1, 3], 4);
+echo $answer . "\n";
 
-echo $answer;
+$answer = $codeObject->minOperations([3, 2], 6);
+echo $answer . "\n";
+
+$answer = $codeObject->minOperations([3, 9, 7], 5);
+echo $answer . "\n";
+
+$answer = $codeObject->minOperations([4, 1, 3], 4);
+echo $answer . "\n";
